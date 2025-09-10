@@ -26,7 +26,7 @@ public:
         // 现在定义：
         int barrier = 0;                    // 有多少人存在语言不通关系
         vector<int> lang_list(n+1,0);       // 记录所有“语言不通”的朋友对中第 i 个语言有多少人学过
-        vector<int> vis(users,false);           // 避免重复记录某一个人
+        vector<int> vis(users,false);       // 避免重复记录某一个人
         // 筛选两个人是否语言不通
         for(int i = 0; i < friendships.size(); i++){
             bool check = false;
