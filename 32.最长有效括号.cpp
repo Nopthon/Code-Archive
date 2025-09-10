@@ -3,8 +3,6 @@
 using namespace std;
 //
 
-//
-
 /*
  * @lc app=leetcode.cn id=32 lang=cpp
  *
