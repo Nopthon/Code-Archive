@@ -62,6 +62,6 @@ public:
     }
 };
 
-// 写完后我才意识到，可以对每个字符串进行一次排序然后 unordered_map 
+// 可以对每个字符串进行一次排序然后 unordered_map 
 // 不过排序的时间效率应该不如哈希
 // @lc code=end
