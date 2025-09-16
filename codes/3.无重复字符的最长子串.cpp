@@ -1,6 +1,6 @@
 // For VSCode Coding
 #include <bits/stdc++.h>
-susing namespace std;
+using namespace std;
 //
 
 /*
