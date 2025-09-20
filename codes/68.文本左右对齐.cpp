@@ -20,48 +20,58 @@ public:
         int cur_len = 0;
         vector<string> cur_words, ans;
         for (int i = 0; i < words.size();) {
-            // 准备填入的单词填不下，这种情况下 i 不会自增
-            if (cur_len + words[i].length() + min(0, (int)cur_words.size() - 1) > maxWidth) {
+            // 加上当前单词后所需的总长度（新单词长+单词总长+当前空格数）是否大于 maxWidth
+            if (cur_len + words[i].length() + cur_words.size() > maxWidth){
+                // 可插入空格数
                 int space_cnt = maxWidth - cur_len;
-                int dived = space_cnt / (cur_words.size() - 1);
-                int rem = space_cnt % (cur_words.size() - 1);
-
+                int dived = 0;
+                int rem = 0;
+                if (cur_words.size() > 1) {
+                    // 平均不少于 dived 个空格
+                    dived = space_cnt / (cur_words.size() - 1);
+                    // 前 rem 个空格插入点需要多一个空格
+                    rem = space_cnt % (cur_words.size() - 1);
+                }
                 string thisline = cur_words.front();
                 if (cur_words.size() == 1) {
                     thisline.append(space_cnt, ' ');
                     ans.push_back(thisline);
                 } else {
                     for (int j = 1; j < cur_words.size(); j++) {
-                        int ext = rem > 0 ? 1 : 0;
-                        rem--;
-                        thisline.append(dived + ext, ' ');
+                        // 第一次提交时出现了 std::length_error
+                        // 可能是 append 的 cnt 参数出现了负数
+                        if (rem > 0) {
+                            thisline.append(dived + 1, ' ');
+                            rem--;
+                        } else {
+                            thisline.append(dived, ' ');
+                        }
                         thisline.append(cur_words[j]);
                     }
                     ans.push_back(thisline);
                 }
-                // 清空 cur_words 与 长度数据
                 cur_len = 0;
                 cur_words.clear();
-            }
-            // 准备填入的单词能填下
+            } 
+            
             else {
                 cur_len += words[i].length();
                 cur_words.push_back(words[i]);
+                // 注意 i++ 在这里
                 i++;
             }
         }
 
+        // 处理最后一行
         if (!cur_words.empty()) {
             string thisline = cur_words.front();
-            if (cur_words.size() == 1) {
-                ans.push_back(thisline);
-            } else {
-                for (int i = 1; i < cur_words.size(); i++) {
-                    thisline.append(1, ' ');
-                    thisline.append(cur_words[i]);
-                }
-                ans.push_back(thisline);
+            for (int i = 1; i < cur_words.size(); i++) {
+                thisline.append(1, ' ');
+                thisline.append(cur_words[i]);
             }
+            // 在末尾填充空格
+            thisline.append(maxWidth - thisline.size(), ' ');
+            ans.push_back(thisline);
         }
         return ans;
     }
