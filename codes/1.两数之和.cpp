@@ -1,3 +1,8 @@
+// For VSCode Coding
+#include <bits/stdc++.h>
+using namespace std;
+//
+
 /*
  * @lc app=leetcode.cn id=1 lang=cpp
  *
