@@ -51,6 +51,8 @@
 ,
   {"id":"27","title":"移除元素","filename":"27.移除元素.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Leetcode_backup/main/codes/27.移除元素.cpp"}
 ,
+  {"id":"274","title":"h-指数","filename":"274.h-指数.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Leetcode_backup/main/codes/274.h-指数.cpp"}
+,
   {"id":"2785","title":"将字符串中的元音字母排序","filename":"2785.将字符串中的元音字母排序.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Leetcode_backup/main/codes/2785.将字符串中的元音字母排序.cpp"}
 ,
   {"id":"28","title":"找出字符串中第一个匹配项的下标","filename":"28.找出字符串中第一个匹配项的下标.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Leetcode_backup/main/codes/28.找出字符串中第一个匹配项的下标.cpp"}
@@ -72,6 +74,8 @@
   {"id":"36","title":"有效的数独","filename":"36.有效的数独.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Leetcode_backup/main/codes/36.有效的数独.cpp"}
 ,
   {"id":"37","title":"解数独","filename":"37.解数独.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Leetcode_backup/main/codes/37.解数独.cpp"}
+,
+  {"id":"392","title":"判断子序列","filename":"392.判断子序列.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Leetcode_backup/main/codes/392.判断子序列.cpp"}
 ,
   {"id":"4","title":"寻找两个正序数组的中位数","filename":"4.寻找两个正序数组的中位数.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Leetcode_backup/main/codes/4.寻找两个正序数组的中位数.cpp"}
 ,
