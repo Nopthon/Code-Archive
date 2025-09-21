@@ -9,6 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="prism.css" rel="stylesheet">
     <script src="prism.js"></script>
+    <style>
         .dark-mode pre[class*="language-"] {
             background: #2d2d3a !important;
         }
@@ -275,7 +276,7 @@
                 <div class="flex items-center">
                     <i class="fas fa-sun text-yellow-400 dark:text-gray-600 mr-2"></i>
                     <label class="theme-switch">
-                        <input type="checkbox" id="themeToggle" />
+                        <input type="checkbox" id="themeToggle" aria-label="切换深色模式" />
                         <span class="slider"></span>
                     </label>
                     <i class="fas fa-moon text-gray-600 dark:text-yellow-400 ml-2"></i>
@@ -327,11 +328,11 @@
 
                 <!-- 分页控件 -->
                 <div id="pagination" class="pagination hidden">
-                    <button id="prev-page" class="page-btn">
+                    <button id="prev-page" class="page-btn" aria-label="上一页">
                         <i class="fas fa-chevron-left"></i>
                     </button>
                     <div id="page-numbers" class="flex gap-1"></div>
-                    <button id="next-page" class="page-btn">
+                    <button id="next-page" class="page-btn" aria-label="下一页">
                         <i class="fas fa-chevron-right"></i>
                     </button>
                 </div>
