@@ -978,11 +978,6 @@
                 // 获取显示语言
                 const displayLang = detectLanguage(item.filename);
                 
-                // 调试信息
-                console.log("Filename:", item.filename);
-                console.log("Prism Language:", prismLang);
-                console.log("Display Language:", displayLang);
-
                 // 清除之前的类
                 preElement.className = '';
                 codeContent.className = '';
@@ -991,6 +986,11 @@
                 preElement.classList.add(`language-${prismLang}`);
                 codeContent.classList.add(`language-${prismLang}`);
 
+                // 更新语言标签显示
+                const langColor = getLanguageColor(displayLang);
+                const codeLangElement = document.getElementById("codeLang");
+                codeLangElement.className = `lang-badge ${langColor}`;
+                codeLangElement.textContent = displayLang;
 
                 // 设置代码内容
                 codeContent.textContent = code;
