@@ -980,6 +980,9 @@
 
                 // 获取 prism 语言
                 const prismLang = getPrismLanguage(item.filename);
+                
+                // 获取显示语言
+                const displayLang = detectLanguage(item.filename);
 
                 // 清除之前的类
                 preElement.className = '';
@@ -988,6 +991,11 @@
                 // 设置新的语言类
                 preElement.classList.add(`language-${prismLang}`);
                 codeContent.classList.add(`language-${prismLang}`);
+
+                // 更新语言标签显示
+                const langColor = getLanguageColor(displayLang);
+                document.getElementById("codeLang").className = `lang-badge ${langColor}`;
+                document.getElementById("codeLang").textContent = displayLang;
 
                 // 设置代码内容
                 codeContent.textContent = code;
