@@ -779,37 +779,70 @@
                 const pageBtn = document.createElement("button");
                 pageBtn.className = `page-btn ${i === currentPage ? 'active' : ''}`;
                 pageBtn.textContent = i;
-                pageBtn.onclick = () => {
-                    currentPage = i;
-                    const query = document.getElementById("searchInput").value;
-                    const results = search(query);
-                    renderResults(results, query);
-                };
+                pageBtn.dataset.page = i; // 添加页码数据属性
                 pageNumbersEl.appendChild(pageBtn);
             }
             
             // 更新上一页/下一页按钮状态
-            document.getElementById("prev-page").className = `page-btn ${currentPage === 1 ? 'disabled' : ''}`;
-            document.getElementById("next-page").className = `page-btn ${currentPage === totalPages ? 'disabled' : ''}`;
+            const prevBtn = document.getElementById("prev-page");
+            const nextBtn = document.getElementById("next-page");
             
-            // 绑定上一页/下一页事件
-            document.getElementById("prev-page").onclick = () => {
-                if (currentPage > 1) {
-                    currentPage--;
-                    const query = document.getElementById("searchInput").value;
-                    const results = search(query);
-                    renderResults(results, query);
-                }
-            };
+            prevBtn.className = `page-btn ${currentPage === 1 ? 'disabled' : ''}`;
+            nextBtn.className = `page-btn ${currentPage === totalPages ? 'disabled' : ''}`;
             
-            document.getElementById("next-page").onclick = () => {
-                if (currentPage < totalPages) {
-                    currentPage++;
-                    const query = document.getElementById("searchInput").value;
-                    const results = search(query);
-                    renderResults(results, query);
-                }
-            };
+            // 绑定事件（只绑定一次）
+            if (!prevBtn.dataset.bound) {
+                prevBtn.addEventListener('click', handlePrevPage);
+                prevBtn.dataset.bound = 'true';
+            }
+            
+            if (!nextBtn.dataset.bound) {
+                nextBtn.addEventListener('click', handleNextPage);
+                nextBtn.dataset.bound = 'true';
+            }
+        }
+
+        // 处理上一页按钮点击
+        function handlePrevPage() {
+            if (currentPage > 1) {
+                currentPage--;
+                const query = document.getElementById("searchInput").value;
+                const results = search(query);
+                renderResults(results, query);
+            }
+        }
+
+        // 处理下一页按钮点击
+        function handleNextPage() {
+            const totalPages = Math.ceil(getFilteredResultsCount() / itemsPerPage);
+            if (currentPage < totalPages) {
+                currentPage++;
+                const query = document.getElementById("searchInput").value;
+                const results = search(query);
+                renderResults(results, query);
+            }
+        }
+
+        // 获取当前筛选条件下的结果总数
+        function getFilteredResultsCount() {
+            const query = document.getElementById("searchInput").value;
+            const results = search(query);
+            return results.length;
+        }
+
+        // 绑定页码按钮事件
+        function bindPageButtons() {
+            document.querySelectorAll('.page-btn:not(#prev-page):not(#next-page)').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const page = parseInt(this.dataset.page);
+                    if (!isNaN(page) && page !== currentPage) {
+                        currentPage = page;
+                        const query = document.getElementById("searchInput").value;
+                        const results = search(query);
+                        renderResults(results, query);
+                    }
+                });
+            });
         }
 
         // 渲染搜索结果
@@ -875,6 +908,9 @@
 
             // 渲染分页控件
             renderPagination(results.length, currentPage, itemsPerPage);
+            
+            // 绑定页码按钮事件
+            setTimeout(bindPageButtons, 0);
         }
 
         // 显示代码视图
