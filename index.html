@@ -643,6 +643,7 @@
                     };
                     langComponent.onerror = () => {
                         console.warn(`无法加载语言组件: ${language}`);
+                        // 即使语言组件加载失败，也继续执行
                         prismLoaded = true;
                         resolve();
                     };
@@ -1029,7 +1030,9 @@
                 await loadPrismJs(prismLang);
                 
                 // 使用 Prism 高亮
-                Prism.highlightElement(codeContent);
+                if (typeof Prism !== 'undefined') {
+                    Prism.highlightElement(codeContent);
+                }
 
                 // 添加复制按钮到代码块
                 let copyBtn = preElement.querySelector('.copy-btn');
