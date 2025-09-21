@@ -774,13 +774,74 @@
             // 清空页码按钮
             pageNumbersEl.innerHTML = '';
             
+            // 计算要显示的页码范围
+            const maxVisiblePages = 5; // 最多显示5个页码按钮
+            let startPage, endPage;
+            
+            if (totalPages <= maxVisiblePages) {
+                // 如果总页数小于等于最大显示页数，显示所有页码
+                startPage = 1;
+                endPage = totalPages;
+            } else {
+                // 计算显示的页码范围
+                const halfVisible = Math.floor(maxVisiblePages / 2);
+                
+                if (currentPage <= halfVisible) {
+                    // 当前页靠近开头
+                    startPage = 1;
+                    endPage = maxVisiblePages;
+                } else if (currentPage + halfVisible >= totalPages) {
+                    // 当前页靠近结尾
+                    startPage = totalPages - maxVisiblePages + 1;
+                    endPage = totalPages;
+                } else {
+                    // 当前页在中间
+                    startPage = currentPage - halfVisible;
+                    endPage = currentPage + halfVisible;
+                }
+            }
+            
+            // 添加第一页按钮（如果不是第一页且不在显示范围内）
+            if (startPage > 1) {
+                const firstPageBtn = document.createElement("button");
+                firstPageBtn.className = `page-btn ${1 === currentPage ? 'active' : ''}`;
+                firstPageBtn.textContent = '1';
+                firstPageBtn.dataset.page = '1';
+                pageNumbersEl.appendChild(firstPageBtn);
+                
+                // 添加省略号
+                if (startPage > 2) {
+                    const ellipsis = document.createElement("span");
+                    ellipsis.className = "px-2 py-1 text-gray-500";
+                    ellipsis.textContent = "...";
+                    pageNumbersEl.appendChild(ellipsis);
+                }
+            }
+            
             // 创建页码按钮
-            for (let i = 1; i <= totalPages; i++) {
+            for (let i = startPage; i <= endPage; i++) {
                 const pageBtn = document.createElement("button");
                 pageBtn.className = `page-btn ${i === currentPage ? 'active' : ''}`;
                 pageBtn.textContent = i;
-                pageBtn.dataset.page = i; // 添加页码数据属性
+                pageBtn.dataset.page = i;
                 pageNumbersEl.appendChild(pageBtn);
+            }
+            
+            // 添加最后一页按钮（如果不是最后一页且不在显示范围内）
+            if (endPage < totalPages) {
+                // 添加省略号
+                if (endPage < totalPages - 1) {
+                    const ellipsis = document.createElement("span");
+                    ellipsis.className = "px-2 py-1 text-gray-500";
+                    ellipsis.textContent = "...";
+                    pageNumbersEl.appendChild(ellipsis);
+                }
+                
+                const lastPageBtn = document.createElement("button");
+                lastPageBtn.className = `page-btn ${totalPages === currentPage ? 'active' : ''}`;
+                lastPageBtn.textContent = totalPages;
+                lastPageBtn.dataset.page = totalPages;
+                pageNumbersEl.appendChild(lastPageBtn);
             }
             
             // 更新上一页/下一页按钮状态
