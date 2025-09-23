@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nopthon 的刷题小仓库</title>
+    <title>Nopthon 的刷题小仓库 (╹ڡ╹ )</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="prism.css" rel="stylesheet">
@@ -393,7 +393,7 @@
                     <i class="fas fa-code text-2xl"></i>
                 </div>
                 <div>
-                    <h1 class="text-3xl font-bold">Nopthon 的刷题小仓库</h1>
+                    <h1 class="text-3xl font-bold">Nopthon 的刷题小仓库 (╹ڡ╹ )</h1>
                 </div>
             </div>
 
@@ -998,6 +998,13 @@
                 // 使用 Prism 高亮
                 if (typeof Prism !== 'undefined') {
                     Prism.highlightElement(codeContent);
+                    
+                    // 使代码中的链接在新标签页中打开
+                    const links = codeContent.querySelectorAll('a[href]');
+                    links.forEach(link => {
+                        link.target = '_blank';
+                        link.rel = 'noopener noreferrer';
+                    });
                 }
 
             } catch (error) {
