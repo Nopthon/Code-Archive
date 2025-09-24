@@ -9,8 +9,8 @@ using namespace std;
  * [274] H 指数
  */
 
-/*
-class Solution {
+//
+class Plain_Solution {
 public:
     int hIndex(vector<int>& citations) {
         // 容易得出：如果 h0 是最大的 h 指数，那么 0~h0 都可以是 h 指数
@@ -34,7 +34,6 @@ public:
         return ans;
     }
 };
-*/
 
 // @lc code=start
 class Solution {
@@ -42,7 +41,7 @@ public:
     int hIndex(vector<int>& citations) {
         // 如果追求时间复杂度的话，我们不妨构造一个计数数组，对 citations 进行桶计数
         // 从高到低扫描到的第一个正确的 h 指数就是正确答案
-        // （说实话这题 n <= 5000 的数据体现不出两种解法的时间复杂度区别）
+        // 时间复杂度 O(n)，对于 n <= 5000 的数据似乎没什么区分度
         int n = citations.size();
         vector<int> cnt (n+1, 0);
         for(int &x : citations){

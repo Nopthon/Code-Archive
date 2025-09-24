@@ -9,19 +9,17 @@ using namespace std;
  * [28] 找出字符串中第一个匹配项的下标
  */
 
-/*
- * 这里是使用了 find 函数的程序
- * class Solution {
- * public:
- *     int strStr(string haystack, string needle) {
- *         auto where = haystack.find(needle);
- *         if(where != string::npos){
- *             return where;
- *         }
- *         else return -1;
- *     }
- * };
- */
+// 这里是使用了 find 函数的程序
+class Plain_Solution {
+public:
+    int strStr(string haystack, string needle) {
+        auto where = haystack.find(needle);
+        if(where != string::npos){
+            return where;
+        }
+        else return -1;
+    }
+};
 
 // @lc code=start
 class Solution {

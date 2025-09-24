@@ -9,8 +9,8 @@ using namespace std;
  * [42] 接雨水
  */
 
-/* 朴素解，逐层扫描
-class Solution {
+// 朴素解，逐层扫描
+class Plain_Solution {
 public:
     int trap(vector<int>& height) {
         // 从最底层开始，一层一层解决
@@ -36,9 +36,6 @@ public:
         return ans;
     }
 };
-*/
-
-
 
 // @lc code=start
 class Solution {

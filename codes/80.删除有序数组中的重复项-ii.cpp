@@ -9,8 +9,8 @@ using namespace std;
  * [80] 删除有序数组中的重复项 II
  */
 
-/*
-class Solution {
+// 
+class Plain_Solution {
 public:
     int removeDuplicates(vector<int>& nums) {
         // 考虑两次遍历：
@@ -38,7 +38,7 @@ public:
         return step;
     }
 };
-*/
+
 
 // @lc code=start
 class Solution {

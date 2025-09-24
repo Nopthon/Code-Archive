@@ -9,8 +9,8 @@ using namespace std;
  * [392] 判断子序列
  */
 
-/*
-class Solution {
+//
+class Original_Solution {
 public:
     bool isSubsequence(string s, string t) {
         // 对原始题目来说只有一个 s 和一个 t 
@@ -31,7 +31,7 @@ public:
         return false;
     }
 };
-*/
+
 
 // @lc code=start
 class Solution {

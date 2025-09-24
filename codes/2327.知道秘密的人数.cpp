@@ -9,9 +9,9 @@ using namespace std;
  * [2327] 知道秘密的人数
  */
 
-/* 最纯粹的模拟，时间复杂度达到 O(2^n)，TLE
+// 最纯粹的模拟，时间复杂度达到 O(2^n)，TLE
 // 没有 % MOD 的原因是这个做法不方便中途取模
-class Solution {
+class Bad_Solution {
 public:
     int peopleAwareOfSecret(int n, int delay, int forget) {
         deque<int> dq(1,0);
@@ -32,7 +32,6 @@ public:
 
     }
 };
-*/
 
 class Solution {
 public:

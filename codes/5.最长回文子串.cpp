@@ -9,8 +9,8 @@ using namespace std;
  * [5] 最长回文子串
  */
 
-/* 最朴素的搜索 O(n^2)，并且常数也比较烂，概率 TLE 概率 AC
-class Solution {
+// 最朴素的搜索 O(n^2)，并且常数也比较烂，概率 TLE 概率 AC
+class Plain_Solution {
 public:
     string longestPalindrome(string s) {
         string ans(1,s[0]);
@@ -40,9 +40,6 @@ public:
         return ans;
     }
 };
-*/
-
-
 
 // @lc code=start
 class Solution {

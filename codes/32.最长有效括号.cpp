@@ -9,8 +9,8 @@ using namespace std;
  * [32] 最长有效括号
  */
 
-/* 一开始的思路：维护一个可能的最长括号字串队列
-class Solution {
+// 一开始的思路：维护一个可能的最长括号字串队列
+class Plain_Solution {
 public:
     int longestValidParentheses(string s) {
         // 最长括号字串队列
@@ -43,7 +43,6 @@ public:
         return ans;
     }
 };
-*/
 
 // @lc code=start
 class Solution
