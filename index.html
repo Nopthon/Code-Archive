@@ -360,6 +360,11 @@
             display: none;
         }
         
+        /* 深色模式下的标签容器样式 */
+        .dark-mode .tag-container {
+            border: 1px solid #334155;
+        }
+        
         .tag-item {
             display: inline-block;
             margin: 0.25rem;
@@ -378,6 +383,16 @@
         .tag-item.selected {
             background-color: var(--primary);
             color: white;
+        }
+        
+        /* 深色模式下的标签样式 */
+        .dark-mode .tag-item {
+            background-color: #334155;
+            color: #f1f5f9;
+        }
+        
+        .dark-mode .tag-item:hover {
+            background-color: #475569;
         }
         
         .tag-checkbox {
