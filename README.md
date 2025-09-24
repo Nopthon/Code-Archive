@@ -28,7 +28,11 @@
 
 [Nopthon/LeetCode-Reviewer: An automated tool to review your LeetCode solutions on Github Pages.](https://github.com/Nopthon/LeetCode-Reviewer)
 
+（如你所见这个刷题仓库似乎不仅仅存储了代码，还有几个奇奇怪怪的文件，这就是原因了）
+
 每次当我将我的本地仓库 Push 到 Github 仓库时，网页就会进行自动更新
+
+Upd: 添加了标签系统，没有 Push 到 LeetCode-Reviewer 上，毕竟 AI 一个拓展功能不难
 
 就这样罢。
 

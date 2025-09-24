@@ -21,8 +21,8 @@ public:
         for(char &c : brokenLetters){
             broken[c-'a'] = true;
         }
-        // 确保最后一个单词可以被判定
-        text += " ";
+        
+        text += " ";                    // 确保最后一个单词可以被判定
         int ans = 0;
         bool skip = false;
         for(int i = 0; i < text.length(); i++){
