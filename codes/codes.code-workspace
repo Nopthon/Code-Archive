@@ -27,7 +27,12 @@
 			"stacktrace": "cpp",
 			"regex": "cpp",
 			"valarray": "cpp",
-			"chrono": "cpp"
+			"chrono": "cpp",
+			"cstdlib": "cpp",
+			"random": "cpp",
+			"algorithm": "cpp",
+			"limits": "cpp",
+			"utility": "cpp"
 		}
 	}
 }

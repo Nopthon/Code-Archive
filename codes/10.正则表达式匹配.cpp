@@ -21,7 +21,7 @@ public:
         // 匹配过短/过长都会导致匹配错误
         // 我们不妨用记忆化搜索去分析
         // 下面给出的数组 vis 记忆化 s[i] 与 p[j] 是否匹配
-        // -1 表示尚未 check；0 表示匹配Another_
+        // -1 表示尚未 check；0 表示匹配失败；1 表示匹配成功 
         vector<vector<int>> vis(s.length() + 1, vector<int>(p.length() + 1, -1));
 
         // 因为正则表达式需要完全匹配，所以 check(s, p, 0, 0, vis) 的结果就是答案

@@ -16,7 +16,7 @@ using ll = long long;
 using vi = vector<int>;
 using vvi = vector<vector<int>>;
 
-// 先翻译一遍题干：对于一个数列，求出其最长不上升子数列（LIS）的长度
+// 先翻译一遍题干：对于一个数列，求出其最长不上升子数列的长度
 // 以及至少能用几个最长不上升子序列覆盖整个数列
 void plain_solve() {
     // O(n^2) 朴素做法（只考虑第一小问）
@@ -100,7 +100,7 @@ signed main() {
 
     int t;
     // cin >> t;		// multi testcases
-    t = 1;			// single testcases
+    t = 1;			// single testcase
 
     while (t--) {
         solve();

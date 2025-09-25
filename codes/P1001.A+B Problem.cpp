@@ -20,7 +20,7 @@ signed main(){
     
     int t; 
     // cin >> t;		// multi testcases
-    t = 1;			// single testcases
+    t = 1;			// single testcase
     
     while (t--){
         int a, b;
