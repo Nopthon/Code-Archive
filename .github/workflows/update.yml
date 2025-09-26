@@ -32,6 +32,8 @@ jobs:
             # NEW: Determine source based on filename pattern
             if [[ "$filename" == P* ]] || [[ "$filename" == B* ]]; then
               source="luogu"
+            elif [[ "$filename" == CF* ]]; then
+              source="codeforces"
             else
               source="leetcode"
             fi
