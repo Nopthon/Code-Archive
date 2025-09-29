@@ -37,6 +37,8 @@
 ,
   {"id":"1792","title":"最大平均通过率","filename":"1792.最大平均通过率.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Code-Archive/main/codes/1792.最大平均通过率.cpp","source":"leetcode"}
 ,
+  {"id":"189","title":"轮转数组","filename":"189.轮转数组.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Code-Archive/main/codes/189.轮转数组.cpp","source":"leetcode"}
+,
   {"id":"1935","title":"可以输入的最大单词数","filename":"1935.可以输入的最大单词数.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Code-Archive/main/codes/1935.可以输入的最大单词数.cpp","source":"leetcode"}
 ,
   {"id":"2","title":"两数相加","filename":"2.两数相加.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Code-Archive/main/codes/2.两数相加.cpp","source":"leetcode"}
@@ -46,6 +48,8 @@
   {"id":"21","title":"合并两个有序链表","filename":"21.合并两个有序链表.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Code-Archive/main/codes/21.合并两个有序链表.cpp","source":"leetcode"}
 ,
   {"id":"2327","title":"知道秘密的人数","filename":"2327.知道秘密的人数.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Code-Archive/main/codes/2327.知道秘密的人数.cpp","source":"leetcode"}
+,
+  {"id":"238","title":"除自身以外数组的乘积","filename":"238.除自身以外数组的乘积.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Code-Archive/main/codes/238.除自身以外数组的乘积.cpp","source":"leetcode"}
 ,
   {"id":"239","title":"滑动窗口最大值","filename":"239.滑动窗口最大值.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Code-Archive/main/codes/239.滑动窗口最大值.cpp","source":"leetcode"}
 ,
@@ -120,6 +124,10 @@
   {"id":"9","title":"回文数","filename":"9.回文数.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Code-Archive/main/codes/9.回文数.cpp","source":"leetcode"}
 ,
   {"id":"966","title":"元音拼写检查器","filename":"966.元音拼写检查器.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Code-Archive/main/codes/966.元音拼写检查器.cpp","source":"leetcode"}
+,
+  {"id":"CF2131E","title":"Adjacent XOR","filename":"CF2131E.Adjacent XOR.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Code-Archive/main/codes/CF2131E.Adjacent XOR.cpp","source":"codeforces"}
+,
+  {"id":"CF2149D","title":"A and B","filename":"CF2149D.A and B.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Code-Archive/main/codes/CF2149D.A and B.cpp","source":"codeforces"}
 ,
   {"id":"CF2149E","title":"Hidden Knowledge of the Ancients","filename":"CF2149E.Hidden Knowledge of the Ancients.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Code-Archive/main/codes/CF2149E.Hidden Knowledge of the Ancients.cpp","source":"codeforces"}
 ,
