@@ -10,6 +10,9 @@ using namespace std;
  */
 
 // @lc code=start
+
+// 更优的解答请参考 LeetCode 76 的 diff 变量优化
+// 具有更优的常数优化
 class Solution {
 public:
     vector<int> findAnagrams(string s, string p) {

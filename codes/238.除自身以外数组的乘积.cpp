@@ -9,7 +9,7 @@ using namespace std;
  * [238] 除自身以外数组的乘积
  */
 
-// @lc code=start
+
 class Plain_Solution {
 public:
     vector<int> productExceptSelf(vector<int>& nums) {
@@ -34,6 +34,7 @@ public:
     }
 };
 
+// @lc code=start
 class Solution {
 public:
     vector<int> productExceptSelf(vector<int>& nums) {

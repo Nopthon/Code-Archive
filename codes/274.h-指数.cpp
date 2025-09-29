@@ -9,7 +9,6 @@ using namespace std;
  * [274] H 指数
  */
 
-//
 class Plain_Solution {
 public:
     int hIndex(vector<int>& citations) {
