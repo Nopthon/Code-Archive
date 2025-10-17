@@ -99,6 +99,8 @@
 ,
   {"id":"51","title":"n-皇后","filename":"51.n-皇后.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Code-Archive/main/codes/51.n-皇后.cpp","source":"leetcode"}
 ,
+  {"id":"52","title":"n-皇后-ii","filename":"52.n-皇后-ii.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Code-Archive/main/codes/52.n-皇后-ii.cpp","source":"leetcode"}
+,
   {"id":"58","title":"最后一个单词的长度","filename":"58.最后一个单词的长度.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Code-Archive/main/codes/58.最后一个单词的长度.cpp","source":"leetcode"}
 ,
   {"id":"66","title":"加一","filename":"66.加一.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Code-Archive/main/codes/66.加一.cpp","source":"leetcode"}
@@ -138,6 +140,8 @@
   {"id":"P1541","title":"[NOIP 2010 提高组] 乌龟棋","filename":"P1541.[NOIP 2010 提高组] 乌龟棋.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Code-Archive/main/codes/P1541.[NOIP 2010 提高组] 乌龟棋.cpp","source":"luogu"}
 ,
   {"id":"P1868","title":"饥饿的奶牛","filename":"P1868.饥饿的奶牛.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Code-Archive/main/codes/P1868.饥饿的奶牛.cpp","source":"luogu"}
+,
+  {"id":"P3375","title":"【模板】KMP","filename":"P3375.【模板】KMP.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Code-Archive/main/codes/P3375.【模板】KMP.cpp","source":"luogu"}
 ,
   {"id":"P3842","title":"[TJOI2007] 线段","filename":"P3842.[TJOI2007] 线段.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Code-Archive/main/codes/P3842.[TJOI2007] 线段.cpp","source":"luogu"}
 ,
