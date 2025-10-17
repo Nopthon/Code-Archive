@@ -135,6 +135,10 @@
 ,
   {"id":"CF2149E","title":"Hidden Knowledge of the Ancients","filename":"CF2149E.Hidden Knowledge of the Ancients.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Code-Archive/main/codes/CF2149E.Hidden Knowledge of the Ancients.cpp","source":"codeforces"}
 ,
+  {"id":"CF2162D","title":"Beautiful Permutation","filename":"CF2162D.Beautiful Permutation.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Code-Archive/main/codes/CF2162D.Beautiful Permutation.cpp","source":"codeforces"}
+,
+  {"id":"CF2162E","title":"Beautiful Palindromes","filename":"CF2162E.Beautiful Palindromes.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Code-Archive/main/codes/CF2162E.Beautiful Palindromes.cpp","source":"codeforces"}
+,
   {"id":"P1001","title":"A+B Problem","filename":"P1001.A+B Problem.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Code-Archive/main/codes/P1001.A+B Problem.cpp","source":"luogu"}
 ,
   {"id":"P1020","title":"[NOIP 1999 提高组] 导弹拦截","filename":"P1020.[NOIP 1999 提高组] 导弹拦截.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Code-Archive/main/codes/P1020.[NOIP 1999 提高组] 导弹拦截.cpp","source":"luogu"}
@@ -144,8 +148,6 @@
   {"id":"P1177","title":"【模板】快速排序","filename":"P1177.【模板】快速排序.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Code-Archive/main/codes/P1177.【模板】快速排序.cpp","source":"luogu"}
 ,
   {"id":"P1541","title":"[NOIP 2010 提高组] 乌龟棋","filename":"P1541.[NOIP 2010 提高组] 乌龟棋.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Code-Archive/main/codes/P1541.[NOIP 2010 提高组] 乌龟棋.cpp","source":"luogu"}
-,
-  {"id":"P1868","title":"饥饿的奶牛","filename":"P1868.饥饿的奶牛.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Code-Archive/main/codes/P1868.饥饿的奶牛.cpp","source":"luogu"}
 ,
   {"id":"P3375","title":"【模板】KMP","filename":"P3375.【模板】KMP.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Code-Archive/main/codes/P3375.【模板】KMP.cpp","source":"luogu"}
 ,
