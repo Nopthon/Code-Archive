@@ -494,6 +494,11 @@
             color: white;
         }
 
+        .cf-difficulty-all {
+            background-color: #b88510;
+            color: white;
+        }
+
         .difficulty-tag {
             background-color: #e0f2fe;
             color: #0369a1;
@@ -1203,6 +1208,8 @@
                                             bgColorClass = "lc-difficulty-hard";
                                             break;
                                     }
+                                } else if (tag.startsWith("CF-")) {
+                                    bgColorClass = "cf-difficulty-all";
                                 }
                                 return `<span class="lang-badge ${bgColorClass}" style="margin: 0 0.25rem;">${tag}</span>`;
                             })
@@ -1366,7 +1373,7 @@
             const otherTags = [];
 
             allTags.forEach((tag) => {
-                if (tag.startsWith("LC-") || tag.startsWith("Lg-")) {
+                if (tag.startsWith("LC-") || tag.startsWith("Lg-") || tag.startsWith("CF-")) {
                     difficultyTags.push(tag);
                 } else if (
                     [
