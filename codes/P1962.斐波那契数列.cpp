@@ -68,6 +68,8 @@ Matrix matrix_pow(Matrix base, long long exp) {
     return result;
 }
 
+// 矩阵快速幂做法
+// 进行了一些封装
 void solve() {
     ll n; cin >> n; 
 	if(n <= 1){

@@ -109,6 +109,8 @@ void solve(){
 	} else assert(0);   // impossible
 	
 	cout << "\n";
+
+	// 上面的逻辑可以化简
 }
 
 
