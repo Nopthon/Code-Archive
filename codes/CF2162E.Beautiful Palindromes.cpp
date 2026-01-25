@@ -1,4 +1,4 @@
-/* Title: CF2162E Beautiful Palindromes
+/* Title: CF2162E. Beautiful Palindromes
  *
  * From Codeforces: https://codeforces.com/contest/2162/problem/E
  *

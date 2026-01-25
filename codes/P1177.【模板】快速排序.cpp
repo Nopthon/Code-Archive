@@ -2,7 +2,7 @@
  *
  * From Luogu: https://www.luogu.com.cn/problem/P1177
  *
- * Record: https://www.luogu.com.cn/record/
+ * Record: https://www.luogu.com.cn/record/258862498
  */
 
 #include <bits/stdc++.h>
@@ -18,7 +18,7 @@ using vvi = vector<vector<int>>;
 // RandomIt 表明容器的迭代器必须支持随机访问；
 // Compare 使得排序函数可以是函数指针、函数对象、lambda表达式
 template <typename RandomIt, typename Compare>
-pair<RandomIt, RandomIt> partition(RandomIt first, RandomIt last, Compare comp) {
+pair<RandomIt, RandomIt> Partition(RandomIt first, RandomIt last, Compare comp) {
     // 三数取中法选择 pivot
     auto mid = first + (last - first) / 2;
     if (comp(*mid, *first)) iter_swap(first, mid);
@@ -26,21 +26,19 @@ pair<RandomIt, RandomIt> partition(RandomIt first, RandomIt last, Compare comp) 
     if (comp(*(last-1), *mid)) iter_swap(mid, last-1);
 
     iter_swap(mid, prev(last));  // pivot放到最后
+	auto pivot_val = *(prev(last));	// 保存 pivot 值
     
     auto lt = first;      // lt: 小于区域的边界（迭代器）
     auto i = first;       // i: 当前的遍历指针（迭代器）
-    auto gt = prev(last); // gt: 大于区域的边界（迭代器）
+    auto gt = prev(prev(last)); // gt: 大于区域的边界（迭代器）
     
-    while (i != gt) {
-        if (comp(*i, *mid)) {
+    while (i <= gt) {
+        if (comp(*i, pivot_val)) {
             // 当前元素小于pivot，放到左侧
-            iter_swap(lt, i);
-            ++lt;
-            ++i;
-        } else if (comp(*mid, *i)) {
+            iter_swap(lt++, i++);
+        } else if (comp(pivot_val, *i)) {
             // 当前元素大于pivot，放到右侧
-            iter_swap(i, gt);
-            --gt;
+            iter_swap(i, gt--);
             // 不递增i，因为 i 指向的新元素尚未check
         } else {
             // 当前元素等于pivot，留在中间
@@ -64,16 +62,16 @@ void quick_sort(RandomIt first, RandomIt last, Compare comp) {
     }
 
     // 选择pivot并进行分区
-    auto pivot_iter = partition(first, last, comp);
+    auto pivot_iter = Partition(first, last, comp);
 
     // 递归排序左右两部分
-    quick_sort(first, pivot_iter, comp);
-    quick_sort(next(pivot_iter), last, comp);
+    quick_sort(first, pivot_iter.first, comp);
+    quick_sort(pivot_iter.second, last, comp);
 }
 
 // 主排序函数（类似STL的sort接口）
 template <typename RandomIt, typename Compare = less<>>
-void sort(RandomIt first, RandomIt last, Compare comp = Compare{}) {
+void Sort(RandomIt first, RandomIt last, Compare comp = Compare{}) {
     if (first == last) return;
     quick_sort(first, last, comp);
 }
@@ -83,6 +81,9 @@ void solve() {
     int len; cin >> len;
     vi a(len); for(int &x : a) cin >> x;
 
+    Sort(a.begin(), a.end());
+
+    for(int &x : a) cout << x << " ";
 }
 
 signed main() {

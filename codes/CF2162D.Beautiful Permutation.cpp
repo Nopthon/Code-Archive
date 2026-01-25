@@ -1,4 +1,4 @@
-/* Title: CF2162D Beautiful Permutation
+/* Title: CF2162D. Beautiful Permutation
  *
  * From Codeforces: https://codeforces.com/contest/2162/problem/D
  *

@@ -1,4 +1,4 @@
-/* Title: CF2131E Adjacent XOR
+/* Title: CF2131E. Adjacent XOR
  *
  * From Codeforces: https://codeforces.com/contest/2131/problem/E
  *

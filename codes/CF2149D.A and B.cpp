@@ -1,4 +1,4 @@
-/* Title: CF2149D A and B
+/* Title: CF2149D. A and B
  *
  * From Codeforces: https://codeforces.com/contest/2149/problem/D
  *

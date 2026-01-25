@@ -1,4 +1,4 @@
-/* Title: CF2149E Hidden Knowledge of the Ancients
+/* Title: CF2149E. Hidden Knowledge of the Ancients
  *
  * From Codeforces: https://codeforces.com/contest/2149/problem/E
  *
