@@ -131,6 +131,14 @@
 ,
   {"id":"AT_abc211_d","title":"Number of Shortest paths","filename":"AT_abc211_d.Number of Shortest paths.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Code-Archive/main/codes/AT_abc211_d.Number of Shortest paths.cpp","source":"atcoder"}
 ,
+  {"id":"AT_dp_d","title":"Knapsack 1","filename":"AT_dp_d.Knapsack 1.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Code-Archive/main/codes/AT_dp_d.Knapsack 1.cpp","source":"atcoder"}
+,
+  {"id":"AT_dp_f","title":"LCS","filename":"AT_dp_f.LCS.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Code-Archive/main/codes/AT_dp_f.LCS.cpp","source":"atcoder"}
+,
+  {"id":"AT_dp_i","title":"Coins","filename":"AT_dp_i.Coins.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Code-Archive/main/codes/AT_dp_i.Coins.cpp","source":"atcoder"}
+,
+  {"id":"AT_dp_u","title":"Grouping","filename":"AT_dp_u.Grouping.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Code-Archive/main/codes/AT_dp_u.Grouping.cpp","source":"atcoder"}
+,
   {"id":"CF20C","title":"Dijkstra？","filename":"CF20C.Dijkstra？.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Code-Archive/main/codes/CF20C.Dijkstra？.cpp","source":"codeforces"}
 ,
   {"id":"CF2131E","title":"Adjacent XOR","filename":"CF2131E.Adjacent XOR.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Code-Archive/main/codes/CF2131E.Adjacent XOR.cpp","source":"codeforces"}
@@ -169,7 +177,7 @@
 ,
   {"id":"P1177","title":"【模板】快速排序","filename":"P1177.【模板】快速排序.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Code-Archive/main/codes/P1177.【模板】快速排序.cpp","source":"luogu"}
 ,
-  {"id":"P1219","title":"[USACO1","filename":"P1219.[USACO1.5] 八皇后 Checker Challenge.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Code-Archive/main/codes/P1219.[USACO1.5] 八皇后 Checker Challenge.cpp","source":"luogu"}
+  {"id":"P1219","title":"[USACO1_5] 八皇后 Checker Challenge","filename":"P1219.[USACO1_5] 八皇后 Checker Challenge.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Code-Archive/main/codes/P1219.[USACO1_5] 八皇后 Checker Challenge.cpp","source":"luogu"}
 ,
   {"id":"P1250","title":"种树","filename":"P1250.种树.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Code-Archive/main/codes/P1250.种树.cpp","source":"luogu"}
 ,
@@ -178,6 +186,10 @@
   {"id":"P1962","title":"斐波那契数列","filename":"P1962.斐波那契数列.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Code-Archive/main/codes/P1962.斐波那契数列.cpp","source":"luogu"}
 ,
   {"id":"P2024","title":"[NOI2001] 食物链","filename":"P2024.[NOI2001] 食物链.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Code-Archive/main/codes/P2024.[NOI2001] 食物链.cpp","source":"luogu"}
+,
+  {"id":"P2197","title":"【模板】Nim 游戏","filename":"P2197.【模板】Nim 游戏.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Code-Archive/main/codes/P2197.【模板】Nim 游戏.cpp","source":"luogu"}
+,
+  {"id":"P2575","title":"高手过招","filename":"P2575.高手过招.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Code-Archive/main/codes/P2575.高手过招.cpp","source":"luogu"}
 ,
   {"id":"P2678","title":"[NOIP 2015 提高组] 跳石头","filename":"P2678.[NOIP 2015 提高组] 跳石头.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Code-Archive/main/codes/P2678.[NOIP 2015 提高组] 跳石头.cpp","source":"luogu"}
 ,
@@ -192,6 +204,8 @@
   {"id":"P3842","title":"[TJOI2007] 线段","filename":"P3842.[TJOI2007] 线段.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Code-Archive/main/codes/P3842.[TJOI2007] 线段.cpp","source":"luogu"}
 ,
   {"id":"P3956","title":"[NOIP 2017 普及组] 棋盘","filename":"P3956.[NOIP 2017 普及组] 棋盘.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Code-Archive/main/codes/P3956.[NOIP 2017 普及组] 棋盘.cpp","source":"luogu"}
+,
+  {"id":"P5663","title":"[CSP-J 2019] 加工零件","filename":"P5663.[CSP-J 2019] 加工零件.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Code-Archive/main/codes/P5663.[CSP-J 2019] 加工零件.cpp","source":"luogu"}
 ,
   {"id":"P8661","title":"[蓝桥杯 2018 省 B] 日志统计","filename":"P8661.[蓝桥杯 2018 省 B] 日志统计.cpp","raw_url":"https://raw.githubusercontent.com/Nopthon/Code-Archive/main/codes/P8661.[蓝桥杯 2018 省 B] 日志统计.cpp","source":"luogu"}
 ,
