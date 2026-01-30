@@ -322,6 +322,11 @@
             color: white;
         }
 
+        .source-atcoder {
+            background-color: #f169af;
+            color: white;
+        }
+
         /* 筛选按钮样式 */
         .filter-btn {
             padding: 0.5rem 1rem;
@@ -374,6 +379,11 @@
 
         .dark-mode .source-codeforces {
             background-color: #c2410c;
+            color: white;
+        }
+
+        .dark-mode .source-atcoder {
+            background-color: #ff2294;
             color: white;
         }
 
@@ -805,6 +815,8 @@
                 return "source-luogu";
             } else if (source === "codeforces") {
                 return "source-codeforces";
+            } else if (source === "atcoder") {
+                return "source-atcoder";
             }
             return "bg-gray-100 text-gray-800";
         }
@@ -817,6 +829,8 @@
                 return "Luogu";
             } else if (source === "codeforces") {
                 return "Codeforces";
+            } else if (source === "atcoder") {
+                return "Atcoder";
             }
             return source;
         }
@@ -925,6 +939,8 @@
                 document.getElementById("filter-luogu").classList.add("active");
             } else if (source === "codeforces") {
                 document.getElementById("filter-codeforces").classList.add("active");
+            } else if (source === "atcoder") {
+                document.getElementById("filter-atcoder").classList.add("active");
             }
 
             // 重新搜索并渲染结果

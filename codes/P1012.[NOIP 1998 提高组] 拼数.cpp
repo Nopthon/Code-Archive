@@ -21,6 +21,7 @@ void solve() {
     vector<string> nums(n);
     for(string& x : nums) cin >> x;
 
+    // 这个结论的完整证明比我想象的要难好多
     sort(all(nums), [](const string &a,const string &b){
         return a + b > b + a;
     });

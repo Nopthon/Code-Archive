@@ -34,10 +34,11 @@ jobs:
               source="luogu"
             elif [[ "$filename" == CF* ]]; then
               source="codeforces"
+            elif [[ "$filename" == AT* ]]; then
+              source="atcoder"
             else
               source="leetcode"
             fi
-            
             if [ "$first" = true ]; then
               first=false
             else
