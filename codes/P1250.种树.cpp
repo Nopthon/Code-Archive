@@ -25,7 +25,7 @@ void solve() {
 	int n, h; cin >> n >> h;
 	vector<info> a(h); for(info& x : a) cin >> x.b >> x.e >> x.t;
 	// 右端点从小到大（优先），区间长度从短到长（其次）排序
-	// 保证更早结束，长度更短的区间优先满足植树需求
+	// 保证更早结束，长度更短（更加紧急）的区间优先满足植树需求
 	// 同时该排序结果下，重合区间集中在每个区间的右端
 	sort(all(a), [](const info& a, const info& b){
 		if(a.e != b.e) return a.e < b.e;

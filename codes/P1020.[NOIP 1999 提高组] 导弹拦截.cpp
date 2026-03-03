@@ -23,8 +23,8 @@ void plain_solve() {
     // 不妨记以原数列（长度为 n）第 i 项为结尾的最长不上升子数列的长度为 dp[i]
     // 我们最终想要求出 max(dp[i]) (i = 1, ..., n)
     // 考虑 dp[i] 会受到什么影响？
-    // 对于 i 前面的所有项 j ，只要 arr[j] >= arr[i]，说明 arr[i] 可以加在
-    // arr[j] 后面 从而可以尝试构成一个更长的递减子数列
+    // 对于 i 前面的所有项 j ，只要 arr[j] >= arr[i]，说明 arr[i] 可以加在 arr[j] 后面
+    // 从而可以尝试构成一个更长的递减子数列
     // 即 dp[i] = max(dp[i], dp[j]+1), for all (j < i && arr[i] <= arr[j])
     vi arr;
     int num, maxLen = 1;
